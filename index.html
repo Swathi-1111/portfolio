@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi | AI Engineer Aspirant | Japan-bound 🇯🇵</title>
+    <meta name="description"
+        content="Portfolio of Swathi, an AI Engineer Aspirant specializing in ML, Full-stack development, and Japanese language (JLPT N4).">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="kanji-loader">読み込み中...</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="loading-text">Loading Swathi's Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Background Kanji -->
+    <div class="bg-kanji-container">
+        <span class="floating-kanji">未来</span>
+        <span class="floating-kanji">学び</span>
+        <span class="floating-kanji">革新</span>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header / Nav -->
+    <header>
+        <nav>
+            <div class="logo">SWA<span>THI</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-jp">ホーム</span></a></li>
+                <li><a href="#journey"><span class="lang-en">Journey</span><span class="lang-jp">軌跡</span></a></li>
+                <li><a href="#skills"><span class="lang-en">Skills</span><span class="lang-jp">スキル</span></a></li>
+                <li><a href="#ai-journey"><span class="lang-en">AI Learning</span><span class="lang-jp">AI学習</span></a>
+                </li>
+                <li><a href="#projects"><span class="lang-en">Projects</span><span class="lang-jp">プロジェクト</span></a>
+                </li>
+                <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-jp">連絡先</span></a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="lang-toggle">English ⇄ 日本語</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-bloom"></div>
+            <div class="hero-bg-shapes">
+                <div class="shape s1"></div>
+                <div class="shape s2"></div>
+                <div class="shape s3"></div>
+            </div>
+            <div class="container hero-split">
+                <div class="hero-info reveal">
+                    <h1 class="hero-name-big">Swathi S P</h1>
+                    <h2 class="hero-subtitle">AI Engineer Aspirant | Japan-bound <span class="flag">🇯🇵</span></h2>
+                    <div class="hero-typing-wrap">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <div class="hero-social-list">
+                        <a href="https://github.com/Swathi-1111" target="_blank" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/swathi-s-p-21b090290/" target="_blank"
+                            class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:swathisankarkmu2005@gmail.com" class="social-link"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-premium" style="text-decoration: none;">View Projects <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#journey" class="btn btn-unique">My Journey</a>
+                    </div>
+                </div>
+                <div class="hero-visual-modern reveal">
+                    <div class="modern-card-outer">
+                        <div class="glass-photo-frame">
+                            <img src="profile_v2.png" alt="Swathi" class="circular-profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-ind">
+                <div class="scroll-mouse"></div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-container reveal">
+                    <div class="about-content-full">
+                        <h2 class="section-title"><span class="lang-en">About Me</span><span class="lang-jp">自己紹介</span>
+                        </h2>
+                        <div class="lang-en about-text-big">
+                            <p class="big-p">Hello! I’m <strong>Swathi S P</strong>, an Artificial Intelligence and
+                                Machine Learning student with a strong passion for building <strong>intelligent,
+                                    user-focused</strong> applications.</p>
+                            <p class="big-p">I enjoy transforming ideas into real-world solutions by combining AI, ML,
+                                and modern web technologies. My academic journey has helped me gain hands-on experience
+                                through projects like <strong>AI weather systems</strong> and <strong>smart
+                                    platforms</strong>.</p>
+                            <p class="big-p">Currently, I am mastering Japanese (<strong>JLPT N5 cleared</strong>, N4/N3
+                                in progress) to bridge the tech gap between India and Japan.</p>
+                            <div class="goal-tag">✨ Career Goal: AI/ML Engineer in Japan</div>
+                        </div>
+                        <div class="lang-jp about-text-big">
+                            <p class="big-p">こんにちは！<strong>スワティ S
+                                    P</strong>です。人工知能（AI）と機械学習（ML）を専攻する学生で、<strong>インテリジェントでユーザー中心の</strong>アプリケーションを構築することに強い情熱を持っています。
+                            </p>
+                            <p class="big-p">
+                                AI/MLと現代的なウェブ技術を組み合わせ、アイデアを現実の解決策に変えることを楽しんでいます。大学生活を通じて、<strong>AI気象システム</strong>や<strong>スマートプラットフォーム</strong>などのプロジェクトで実務経験を積んできました。
+                            </p>
+                            <p class="big-p">現在、インドと日本の技術の架け橋となるため、日本語を学んでいます（<strong>JLPT N5合格</strong>、N4/N3学習中）。</p>
+                            <div class="goal-tag">✨ キャリア目標: 日本でのAI/MLエンジニア</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section (Vertical Timeline) -->
+        <section id="journey" class="journey-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">My Journey</span><span class="lang-jp">私の歩み</span></h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 <span class="lang-jp jp-date">(令和4年)</span></div>
+                            <div class="lang-en">
+                                <h3>Completed My Schooling</h3>
+                                <p>Finished my secondary education with a strong focus on science and
+                                    mathematics,
+                                    laying the foundation for my engineering career.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>学業修了</h3>
+                                <p>科学と数学に重点を置いた中等教育を修了し、エンジニアとしてのキャリアの基礎を築きました。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"><i class="fas fa-brain"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 <span class="lang-jp jp-date">(令和5年)</span></div>
+                            <div class="lang-en">
+                                <h3>Started My AI/ML Journey</h3>
+                                <p>Dived into the world of Artificial Intelligence and Machine Learning,
+                                    exploring
+                                    Python and data science fundamentals.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>AI/MLの旅を開始</h3>
+                                <p>人工知能と機械学習の世界に飛び込み、Pythonとデータサイエンスの基礎を探求し始めました。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 <span class="lang-jp jp-date">(令和6年)</span></div>
+                            <div class="lang-en">
+                                <h3>JLPT N5 Cleared ✔</h3>
+                                <p>Successfully completed the first milestone of my Japanese language journey,
+                                    mastering
+                                    Hiragana, Katakana, and basic Kanji.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>JLPT N5 合格 ✔</h3>
+                                <p>日本語学習の第一歩として、ひらがな、カタカナ、基本的な漢字をマスターし、合格しました。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"><i class="fas fa-code-branch"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 <span class="lang-jp jp-date">(令和7年)</span></div>
+                            <div class="lang-en">
+                                <h3>Campus Recruitment System</h3>
+                                <p>Developed a full-stack digital hiring platform connecting recruiters,
+                                    colleges, and
+                                    students with robust database architecture.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>キャンパス採用管理システム</h3>
+                                <p>リクルーター、大学、学生を繋ぐ、堅牢なデータベース設計を備えたフルスタックの採用プラットフォームを開発しました。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 5 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"><i class="fas fa-cloud-sun"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 <span class="lang-jp jp-date">(令和7年)</span></div>
+                            <div class="lang-en">
+                                <h3>Weather Prediction AI</h3>
+                                <p>Built an intelligent forecasting system using ML algorithms combined with
+                                    dynamic
+                                    visual weather storytelling.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>天気予測AI</h3>
+                                <p>機械学習アルゴリズムとダイナミックな視覚的演出を組み合わせた、インテリジェントな予測システムを構築しました。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 6 -->
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"><i class="fas fa-pen-nib"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 <span class="lang-jp jp-date">(令和7年)</span></div>
+                            <div class="lang-en">
+                                <h3>JLPT N4 Appeared</h3>
+                                <p>Successfully took the N4 exam. Currently awaiting results while continuing to
+                                    build
+                                    my Japanese proficiency.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>JLPT N4 受験</h3>
+                                <p>N4試験を受験しました。現在は結果を待ちつつ、さらなる日本語能力の向上に励んでいます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 7 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"><i class="fas fa-book-reader"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 <span class="lang-jp jp-date">(令和7年)</span></div>
+                            <div class="lang-en">
+                                <h3>JLPT N3 Preparation</h3>
+                                <p>Advanced study for intermediate Japanese levels, focusing on business
+                                    communication
+                                    and complex grammar.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>JLPT N3 準備</h3>
+                                <p>中級レベルの日本語学習に進み、ビジネスコミュニケーションや複雑な文法に焦点を当てて勉強しています。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 8 -->
+                    <div class="timeline-item right reveal future">
+                        <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date"><span class="lang-en">Future</span><span
+                                    class="lang-jp jp-date">将来</span></div>
+                            <div class="lang-en">
+                                <h3>AI Engineer in Japan 🎯</h3>
+                                <p>Aspiring to contribute to the Japanese tech ecosystem, bridging AI innovation
+                                    between
+                                    India and Japan.</p>
+                            </div>
+                            <div class="lang-jp">
+                                <h3>日本でのAIエンジニア 🎯</h3>
+                                <p>日本のテックエコシステムに貢献し、インドと日本の間のAIイノベーションの架け橋となることを目指しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Petals will be generated by JS -->
+            <div id="petals-container"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="lang-en">Skills & Mastery</span>
+                    <span class="lang-jp">スキルと専門知識</span>
+                </h2>
+                <div class="skills-grid-modern">
+                    <!-- Category 1 -->
+                    <div class="skill-card-modern reveal">
+                        <div class="skill-card-inner">
+                            <div class="card-icon-modern brain-bg"><i class="fas fa-brain"></i></div>
+                            <h3>AI & Machine Learning</h3>
+                            <div class="skill-chips">
+                                <span>Python</span> <span>NumPy</span> <span>Pandas</span> <span>ML Algorithms</span>
+                                <span>CNN/RNN</span>
+                            </div>
+                            <div class="mastery-info">
+                                <div class="mastery-bar">
+                                    <div class="mastery-fill" style="width: 90%;"></div>
+                                </div>
+                                <span>Core Competency</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-card-modern reveal">
+                        <div class="skill-card-inner">
+                            <div class="card-icon-modern code-bg"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Web Development</h3>
+                            <div class="skill-chips">
+                                <span>HTML5/CSS3</span> <span>JavaScript</span> <span>PHP</span> <span>Flask</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="mastery-info">
+                                <div class="mastery-bar">
+                                    <div class="mastery-fill" style="width: 85%;"></div>
+                                </div>
+                                <span>Full Stack Depth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-card-modern reveal">
+                        <div class="skill-card-inner">
+                            <div class="card-icon-modern tools-bg"><i class="fas fa-database"></i></div>
+                            <h3>Database & Tools</h3>
+                            <div class="skill-chips">
+                                <span>MySQL</span> <span>SQL</span> <span>Git/GitHub</span> <span>XAMPP</span>
+                                <span>Cloud Basics</span>
+                            </div>
+                            <div class="mastery-info">
+                                <div class="mastery-bar">
+                                    <div class="mastery-fill" style="width: 80%;"></div>
+                                </div>
+                                <span>Efficient Workflow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-card-modern reveal">
+                        <div class="skill-card-inner">
+                            <div class="card-icon-modern jp-bg"><i class="fas fa-language"></i></div>
+                            <h3>Professional Japanese</h3>
+                            <div class="skill-chips">
+                                <span>JLPT N5 Cleared</span> <span>JLPT N4 Prep</span>
+                            </div>
+                            <div class="mastery-info">
+                                <div class="mastery-bar">
+                                    <div class="mastery-fill" style="width: 95%;"></div>
+                                </div>
+                                <span>Path to N4/N3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="lang-en">Projects</span>
+                    <span class="lang-jp">プロジェクト</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-en">Real-world solutions showcasing my technical learning journey</span>
+                    <span class="lang-jp">技術的な学習の軌跡を示す、現実世界のソリューション</span>
+                </p>
+
+                <div class="projects-grid">
+                    <!-- NEW Project: LED Rental System (Live) -->
+                    <div class="project-card reveal"
+                        style="border-color: var(--accent-color); box-shadow: 0 0 30px rgba(123, 47, 247, 0.15);">
+                        <div class="project-img-wrapper">
+                            <img src="led_rental.png" alt="LED Rental System" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <div class="jp-project-name">LEDレンタルシステム (実運用中)</div>
+                            <h3>LED Rental System <span
+                                    style="font-size: 0.6em; color: var(--success); vertical-align: middle;">●
+                                    Live</span></h3>
+                            <div class="project-badges">
+                                <span class="badge badge-live">Real-Time Impl</span>
+                                <span class="badge">Full-Stack</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>A real-time rental management platform built for <strong>EC Films (Kumbakonam)</strong>
+                                to manage LCD projectors and LED walls. Features a complete admin dashboard for booking
+                                tracking and billing.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://ecfilms.in" target="_blank" class="btn btn-premium btn-sm">
+                                <span class="lang-en">Visit Live Site</span>
+                                <span class="lang-jp">サイトを見る</span>
+                            </a>
+                            <!-- No GitHub link as it might be private/client work, or user didn't provide one. Keeping consistent with user request to just link the site. -->
+                            <button class="btn btn-unique btn-sm project-details-btn" data-project="ecfilms"
+                                onclick="openDetails('ecfilms')" style="padding: 0.6rem 1rem;">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Project 1: AI Weather Prediction -->
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800"
+                                alt="Weather AI" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <div class="jp-project-name">天気予測システム</div>
+                            <h3>AI Weather Prediction System</h3>
+                            <div class="project-badges">
+                                <span class="badge">AI & ML</span>
+                                <span class="badge">Web Dev</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>Machine learning meets immersive weather visualization. Predicts weather and changes
+                                background video in real-time.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="videos/weather_demo.mp4" target="_blank" class="btn btn-premium btn-sm">
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-jp">デモを見る</span>
+                            </a>
+                            <a href="https://github.com/Swathi-1111/WEATHER-FORECASTING-USING-ML" target="_blank"
+                                class="btn btn-unique btn-sm">
+                                <span class="lang-en">GitHub Code</span>
+                                <span class="lang-jp">GitHubコード</span>
+                            </a>
+                            <button class="btn btn-unique btn-sm project-details-btn" data-project="weather"
+                                onclick="openDetails('weather')" style="padding: 0.6rem 1rem;">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Campus Recruitment -->
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800"
+                                alt="Recruitment" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <div class="jp-project-name">キャンパス採用管理システム</div>
+                            <h3>Campus Recruitment System</h3>
+                            <div class="project-badges">
+                                <span class="badge">Full-Stack</span>
+                                <span class="badge">Database</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>Complete digital hiring platform connecting students, colleges, and companies with
+                                role-based access.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="videos/recruitment_demo.mp4" target="_blank" class="btn btn-premium btn-sm">
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-jp">デモを見る</span>
+                            </a>
+                            <a href="https://github.com/Swathi-1111/Campus-Recruitment-Management-System"
+                                target="_blank" class="btn btn-unique btn-sm">
+                                <span class="lang-en">GitHub Code</span>
+                                <span class="lang-jp">GitHubコード</span>
+                            </a>
+                            <button class="btn btn-unique btn-sm project-details-btn" data-project="recruitment"
+                                onclick="openDetails('recruitment')" style="padding: 0.6rem 1rem;">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Smart Nutrition -->
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80&w=800"
+                                alt="Nutrition App" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <div class="jp-project-name">スマート栄養・キッチン管理アプリ</div>
+                            <h3>AI Smart Nutrition App</h3>
+                            <div class="project-badges">
+                                <span class="badge">AI</span>
+                                <span class="badge">Health Tech</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>AI-powered nutrition planning meets intelligent kitchen management with recipe
+                                generation.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="videos/nutrition_demo.mp4" target="_blank" class="btn btn-premium btn-sm">
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-jp">デモを見る</span>
+                            </a>
+                            <a href="https://github.com/Swathi-1111/CHEFSPHERE" target="_blank"
+                                class="btn btn-unique btn-sm">
+                                <span class="lang-en">GitHub Code</span>
+                                <span class="lang-jp">GitHubコード</span>
+                            </a>
+                            <button class="btn btn-unique btn-sm project-details-btn" data-project="nutrition"
+                                onclick="openDetails('nutrition')" style="padding: 0.6rem 1rem;">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: AI Idea Generator -->
+                    <div class="project-card reveal">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+                                alt="Idea Gen" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <div class="jp-project-name">AIプロジェクトアイデア生成</div>
+                            <h3>AI Project Idea Generator</h3>
+                            <div class="project-badges">
+                                <span class="badge">Productivity</span>
+                                <span class="badge">LLM</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>From idea generation to execution — a platform that helps users organize and manage
+                                project ideas with AI.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="videos/idea_gen_demo.mp4" target="_blank" class="btn btn-premium btn-sm">
+                                <span class="lang-en">View Demo</span>
+                                <span class="lang-jp">デモを見る</span>
+                            </a>
+                            <a href="https://github.com/Swathi-1111/AI-PROJECT-IDEA-GENERATOR-CHATBOT" target="_blank"
+                                class="btn btn-unique btn-sm">
+                                <span class="lang-en">GitHub Code</span>
+                                <span class="lang-jp">GitHubコード</span>
+                            </a>
+                            <button class="btn btn-unique btn-sm project-details-btn" data-project="idea-gen"
+                                onclick="openDetails('idea-gen')" style="padding: 0.6rem 1rem;">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Journey & Tools Section -->
+        <section id="ai-journey" class="ai-journey-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">AI Journey</span> <span class="lang-jp">| AI学習の軌跡</span>
+                </h2>
+
+                <!-- AI Journey Flow -->
+                <div class="ai-flow-container">
+                    <div class="flow-path"></div>
+                    <div class="ai-flow-steps">
+                        <!-- Step 1 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">01</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Started with Foundations</span><span
+                                        class="lang-jp">基礎からのスタート</span></h4>
+                                <p><span class="lang-en">Mastered the core concepts of AI/ML/DL, data collection, and
+                                        fundamental training workflows.</span><span
+                                        class="lang-jp">AI/ML/DLの基本、データ収集、および基本的なトレーニングワークフローの核心概念をマスターしました。</span></p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">02</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Mastered Python Ecosystem</span><span
+                                        class="lang-jp">Pythonエコシステムの習得</span></h4>
+                                <p><span class="lang-en">Achieved proficiency in loops, data structures, and essential
+                                        libraries like NumPy, Pandas, and Matplotlib.</span><span
+                                        class="lang-jp">ループ、データ構造、およびNumPy、Pandas、Matplotlibなどの主要ライブラリに精通しました。</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">03</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Strengthened Mathematical Roots</span><span
+                                        class="lang-jp">数学的基礎の強化</span></h4>
+                                <p><span class="lang-en">Deepened my knowledge of Linear Algebra, Probability,
+                                        Statistics, and Calculus for optimal model tuning.</span><span
+                                        class="lang-jp">モデルの最適化のために、線形代数、確率、統計、微積分の知識を深めました。</span></p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">04</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Applied Machine Learning</span><span
+                                        class="lang-jp">機械学習の実践</span></h4>
+                                <p><span class="lang-en">Successfully implemented Supervised and Unsupervised learning
+                                        models using Scikit-learn algorithms.</span><span
+                                        class="lang-jp">Scikit-learnを用いて、教師あり・教師なし学習モデルを実際に実装し、成果を上げました。</span></p>
+                            </div>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">05</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Advanced into Deep Learning</span><span
+                                        class="lang-jp">ディープラーニングへの進展</span></h4>
+                                <p><span class="lang-en">Built complex Neural Networks (ANN, CNN, RNN) for image and
+                                        speech recognition using TensorFlow.</span><span
+                                        class="lang-jp">TensorFlowを使用し、画像・音声認識のための複雑なニューラルネットワーク（ANN、CNN、RNN）を構築しました。</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Step 6 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">06</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Mastered NLP Techniques</span><span
+                                        class="lang-jp">NLP技術のマスター</span></h4>
+                                <p><span class="lang-en">Explored tokenization, sentiment analysis, and the power of
+                                        Transformers using BERT and ChatGPT APIs.</span><span
+                                        class="lang-jp">形態素解析、感情分析、さらにはBERTやChatGPT APIを用いたTransformersの力を探求しました。</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Step 7 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">07</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Explored Generative AI</span><span
+                                        class="lang-jp">生成AIの探求</span></h4>
+                                <p><span class="lang-en">Mastered LLM internals and smart prompt design to create
+                                        efficient AI-driven content workflows.</span><span
+                                        class="lang-jp">LLMの内部構造とプロンプト設計をマスターし、効率的なAI駆動のコンテンツワークフローを作成しました。</span></p>
+                            </div>
+                        </div>
+                        <!-- Step 8 -->
+                        <div class="flow-step reveal">
+                            <div class="step-blob">08</div>
+                            <div class="step-info">
+                                <h4><span class="lang-en">Built Complete Portfolio</span><span
+                                        class="lang-jp">ポートフォリオの完成</span></h4>
+                                <p><span class="lang-en">Developed real-world, end-to-end systems and documented
+                                        detailed case studies for all key milestones.</span><span
+                                        class="lang-jp">現実世界のシステムを開発し、すべての主要な節目において詳細なケーススタディを文書化しました。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">Certificates</span> <span class="lang-jp">|
+                        資格と修了証</span></h2>
+                <div class="certs-grid">
+                    <!-- 1 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <h4>Learning analytical tools</h4>
+                        <p>NPTEL | 2025</p>
+                        <a href="certs/nptel_data.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <h4>Introduction To Industry 4.0 And Industrial Internet Of Things</h4>
+                        <p>NPTEL | 2025</p>
+                        <a href="certs/nptel_iiot.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Deep Learning with TensorFlow</h4>
+                        <p>Cognitive Class AI</p>
+                        <a href="certs/cc_tensorflow.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Machine Learning with Python</h4>
+                        <p>Cognitive Class AI</p>
+                        <a href="certs/cc_ml.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Text Analytics 101</h4>
+                        <p>Cognitive Class AI</p>
+                        <a href="certs/cc_text_analytics.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>GPU Architecture</h4>
+                        <p>Cognitive Class AI</p>
+                        <a href="certs/cc_gpu.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 7 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Predictive Modeling</h4>
+                        <p>Cognitive Class AI</p>
+                        <a href="certs/cc_predictive.pdf" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                    <!-- 8 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon"><i class="fas fa-language"></i></div>
+                        <h4>JLPT N5 Certificate</h4>
+                        <p>Official JLPT</p>
+                        <a href="certs/jlpt_n5.jpg" target="_blank" class="btn btn-premium btn-sm">
+                            <span class="lang-en">View Certificate</span>
+                            <span class="lang-jp">修了証を見る</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Japanese Journey Section -->
+        <section id="japanese-journey" class="jp-journey-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">My Japanese Journey</span><span
+                        class="lang-jp">日本語の旅</span></h2>
+
+                <div class="jp-highlight-grid">
+                    <div class="jp-highlight-box floating reveal">
+                        <div class="jp-level">N5</div>
+                        <div class="jp-status-text">Cleared ✅</div>
+                    </div>
+                    <div class="jp-highlight-box floating reveal delay-1">
+                        <div class="jp-level">N4</div>
+                        <div class="jp-status-text">Appeared ⏳</div>
+                    </div>
+                    <div class="jp-highlight-box floating reveal delay-2">
+                        <div class="jp-level">N3</div>
+                        <div class="jp-status-text">In Progress 📚</div>
+                    </div>
+                    <div class="jp-highlight-box floating reveal delay-3">
+                        <div class="jp-level">N2</div>
+                        <div class="jp-status-text">Future Goal 🎯</div>
+                    </div>
+                </div>
+
+                <div class="jp-scripts-box reveal">
+                    <span>Hiragana ✓</span> <span>Katakana ✓</span> <span>Basic Kanji ✓</span>
+                </div>
+
+                <div class="why-japan-split reveal">
+                    <div class="lang-en">
+                        <h3>🇯🇵 Why Japan?</h3>
+                        <p>Japan stands at the forefront of AI, robotics, and smart technologies. I am deeply inspired
+                            by Japan’s leadership in robotics, automation, and AI-driven healthcare. </p>
+                        <p>Beyond technology, Japan’s strong emphasis on discipline, precision, teamwork, and continuous
+                            improvement (改善 – Kaizen) aligns perfectly with my personal values.</p>
+                    </div>
+                    <div class="lang-jp">
+                        <h3>🇯🇵 日本を目指す理由</h3>
+                        <p>日本は、人工知能、ロボティクス、スマートテクノロジーの分野で世界をリードする国です。最先端技術と実用性を融合させる日本の環境に強く惹かれています。</p>
+                        <p>また、日本の規律、正確さ、チームワーク、そして継続的改善（改善・Kaizen）の文化は、私の価値観と非常に合っています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">My Resume</span><span class="lang-jp">履歴書</span></h2>
+                <div class="resume-wrapper">
+                    <div class="resume-details reveal">
+                        <h3><span class="lang-en">Key Highlights</span><span class="lang-jp">主なハイライト</span></h3>
+                        <div class="highlights-list">
+                            <div class="highlight-item">
+                                <i class="fas fa-university"></i>
+                                <span><span class="lang-en">B.E. in Artificial Intelligence & Machine
+                                        Learning</span><span class="lang-jp">AI・機械学習専攻 工学士(B.E.)号</span></span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-certificate"></i>
+                                <span><span class="lang-en">JLPT N5 Certifications</span><span class="lang-jp">JLPT N5
+                                        合格証書</span></span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <span><span class="lang-en">Seeking AI/ML Engineer Roles in Japan</span><span
+                                        class="lang-jp">日本でのAI/MLエンジニア職を希望</span></span>
+                            </div>
+                        </div>
+                        <div class="resume-btns">
+                            <a href="resumes/resume_en.pdf" target="_blank" class="btn btn-unique">
+                                <span class="lang-en"><i class="fas fa-eye"></i> View English Resume</span>
+                                <span class="lang-jp"><i class="fas fa-eye"></i> 履歴書を表示 (英語)</span>
+                            </a>
+                            <a href="resumes/resume_jp.pdf" target="_blank" class="btn btn-unique">
+                                <span class="lang-en"><i class="fas fa-eye"></i> View Japanese Resume</span>
+                                <span class="lang-jp"><i class="fas fa-eye"></i> 履歴書を表示 (日本語)</span>
+                            </a>
+                        </div>
+                        <p class="last-updated">Last Updated: <span id="current-date"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Vision Section -->
+        <section id="vision" class="vision-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">My Future Vision</span><span
+                        class="lang-jp">未来のビジョン</span></h2>
+
+                <div class="vision-grid">
+                    <div class="vision-card reveal">
+                        <div class="vision-time">2025</div>
+                        <h4><span class="lang-en">Short-term Goals</span><span class="lang-jp">短期目標</span></h4>
+                        <ul>
+                            <li><span class="lang-en">Pass JLPT N3</span><span class="lang-jp">JLPT N3 合格</span></li>
+                            <li><span class="lang-en">Build 3+ AI Projects</span><span
+                                    class="lang-jp">3つ以上のAIプロジェクト構築</span></li>
+                            <li><span class="lang-en">Open Source Contribution</span><span
+                                    class="lang-jp">オープンソースへの貢献</span></li>
+                        </ul>
+                    </div>
+                    <div class="vision-card reveal highlighted">
+                        <div class="vision-time">2026</div>
+                        <h4><span class="lang-en">Mid-term Goals</span><span class="lang-jp">中期目標</span></h4>
+                        <ul>
+                            <li><span class="lang-en">Funded Internship in Japan</span><span
+                                    class="lang-jp">日本での有給インターンシップ</span></li>
+                            <li><span class="lang-en">JLPT N2 Certification</span><span class="lang-jp">JLPT N2
+                                    取得</span></li>
+                            <li><span class="lang-en">Healthcare AI Research</span><span
+                                    class="lang-jp">ヘルスケアAIの研究</span></li>
+                        </ul>
+                    </div>
+                    <div class="vision-card reveal">
+                        <div class="vision-time">2027+</div>
+                        <h4><span class="lang-en">Long-term Vision</span><span class="lang-jp">長期ビジョン</span></h4>
+                        <ul>
+                            <li><span class="lang-en">AI Engineer in Japan</span><span
+                                    class="lang-jp">日本でのAIエンジニア</span></li>
+                            <li><span class="lang-en">Bridge India-Japan Tech</span><span
+                                    class="lang-jp">インドと日本の技術の架け橋</span></li>
+                            <li><span class="lang-en">JLPT N1 Mastery</span><span class="lang-jp">JLPT N1 最高峰の習得</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title"><span class="lang-en">Contact Me</span><span class="lang-jp">連絡先</span></h2>
+                <p class="section-subtitle">
+                    <span class="lang-en">Get In Touch - I'm always interested in new opportunities!</span>
+                    <span class="lang-jp">お気軽にご連絡ください。新しい機会をいつでも歓迎しています。</span>
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="business-card">
+                            <div class="card-front">
+                                <div class="card-name">Swathi S P</div>
+                                <div class="card-title">
+                                    <span class="lang-en">AI Engineer Aspirant</span>
+                                    <span class="lang-jp">将来のAIエンジニア</span>
+                                </div>
+                                <div class="card-contact">
+                                    <p><i class="fas fa-envelope"></i> swathisankarkmu2005@gmail.com</p>
+                                    <p><i class="fas fa-phone"></i> +91 9443276136</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> Thanjavur, Tamil Nadu, India</p>
+                                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/swathi-s-p-21b090290/</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="availability-status">
+                            <span class="status-dot"></span>
+                            <span class="lang-en">Open to Collaboration & Japan Roles</span>
+                            <span class="lang-jp">コラボレーション・日本での職務を募集中</span>
+                        </div>
+                    </div>
+                    <div class="contact-form reveal">
+                        <form id="portfolio-contact" action="https://formspree.io/f/xdankrwz" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Name (名前)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email (メール)" required>
+                            </div>
+                            <div class="form-group">
+                                <select name="language">
+                                    <option value="en">English (英語)</option>
+                                    <option value="jp">Japanese (日本語)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Message (メッセージ)" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-unique w-100">
+                                <span class="lang-en">Send Message</span>
+                                <span class="lang-jp">メッセージを送信</span>
+                                <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Swathi Sankar. All Rights Reserved.</p>
+                    <p class="proverb">
+                        <span class="lang-en">"Fall seven times, stand up eight"</span>
+                        <span class="lang-jp">「七転び八起き」</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=3"></script>
+</body>
+
+</html>
