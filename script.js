@@ -183,13 +183,13 @@ const typingText = document.getElementById("typing-text");
 const professionsEN = [
     "Artificial Intelligence Student",
     "Machine Learning Aspirant",
-    "JLPT N5 | Path to N4/N3",
+    "JLPT N4 Cleared | Path to N3",
     "Building Future in Japan 🇯🇵"
 ];
 const professionsJP = [
     "AI専攻の学生",
     "機械学習エンジニア志望",
-    "JLPT N5 | N4/N3へ挑戦中",
+    "JLPT N4 合格 | N3へ挑戦中",
     "日本でのキャリアを構築中 🇯🇵"
 ];
 
